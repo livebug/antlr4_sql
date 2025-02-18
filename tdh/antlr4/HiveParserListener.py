@@ -1,4 +1,4 @@
-# Generated from C:/UserData/antlr4_sql/tdh/grammar/HiveParser.g4 by ANTLR 4.13.2
+# Generated from F:/2025/antlr4_sql/tdh/grammar/HiveParser.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .HiveParser import HiveParser
@@ -2708,6 +2708,15 @@ class HiveParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by HiveParser#tableDotColumn.
+    def enterTableDotColumn(self, ctx:HiveParser.TableDotColumnContext):
+        pass
+
+    # Exit a parse tree produced by HiveParser#tableDotColumn.
+    def exitTableDotColumn(self, ctx:HiveParser.TableDotColumnContext):
+        pass
+
+
     # Enter a parse tree produced by HiveParser#defaultValue.
     def enterDefaultValue(self, ctx:HiveParser.DefaultValueContext):
         pass
@@ -2867,6 +2876,15 @@ class HiveParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by HiveParser#tableSource.
     def exitTableSource(self, ctx:HiveParser.TableSourceContext):
+        pass
+
+
+    # Enter a parse tree produced by HiveParser#tableSourceAlias.
+    def enterTableSourceAlias(self, ctx:HiveParser.TableSourceAliasContext):
+        pass
+
+    # Exit a parse tree produced by HiveParser#tableSourceAlias.
+    def exitTableSourceAlias(self, ctx:HiveParser.TableSourceAliasContext):
         pass
 
 

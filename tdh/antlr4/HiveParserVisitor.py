@@ -1,4 +1,4 @@
-# Generated from C:/UserData/antlr4_sql/tdh/grammar/HiveParser.g4 by ANTLR 4.13.2
+# Generated from F:/2025/antlr4_sql/tdh/grammar/HiveParser.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .HiveParser import HiveParser
@@ -1509,6 +1509,11 @@ class HiveParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by HiveParser#tableDotColumn.
+    def visitTableDotColumn(self, ctx:HiveParser.TableDotColumnContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by HiveParser#defaultValue.
     def visitDefaultValue(self, ctx:HiveParser.DefaultValueContext):
         return self.visitChildren(ctx)
@@ -1596,6 +1601,11 @@ class HiveParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by HiveParser#tableSource.
     def visitTableSource(self, ctx:HiveParser.TableSourceContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by HiveParser#tableSourceAlias.
+    def visitTableSourceAlias(self, ctx:HiveParser.TableSourceAliasContext):
         return self.visitChildren(ctx)
 
 
