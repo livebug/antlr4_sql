@@ -1620,6 +1620,9 @@ tableAllColumns
 tableOrColumn
     : id_
     ;
+tableDotColumn
+    : tableName DOT columnName
+    ;
 
 defaultValue
     : KW_DEFAULT
@@ -1717,7 +1720,7 @@ tableSource
     : tabname = tableName props = tableProperties? ts = tableSample? asOf = asOfClause? (
         KW_AS? alias = id_
     )?
-    ;
+    ; 
 
 asOfClause
     : KW_FOR (
@@ -2190,7 +2193,8 @@ atomExpression
     | whenExpression
     | subQueryExpression
     | function_
-    | tableOrColumn
+    | tableDotColumn
+    | columnName
     | expressionsInParenthesis
     ;
 
