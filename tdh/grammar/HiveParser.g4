@@ -1658,9 +1658,10 @@ atomjoinSource
     ;
 
 joinSource
-    : atomjoinSource (
-        joinToken joinSourcePart (KW_ON expression | KW_USING columnParenthesesList)?
-    )*
+    : atomjoinSource otherjoinSource*
+    ;
+otherjoinSource
+    : joinToken joinSourcePart (KW_ON expression | KW_USING columnParenthesesList)?
     ;
 
 joinSourcePart

@@ -1549,6 +1549,11 @@ class HiveParserVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by HiveParser#otherjoinSource.
+    def visitOtherjoinSource(self, ctx:HiveParser.OtherjoinSourceContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by HiveParser#joinSourcePart.
     def visitJoinSourcePart(self, ctx:HiveParser.JoinSourcePartContext):
         return self.visitChildren(ctx)
@@ -1601,11 +1606,6 @@ class HiveParserVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by HiveParser#tableSource.
     def visitTableSource(self, ctx:HiveParser.TableSourceContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by HiveParser#tableSourceAlias.
-    def visitTableSourceAlias(self, ctx:HiveParser.TableSourceAliasContext):
         return self.visitChildren(ctx)
 
 

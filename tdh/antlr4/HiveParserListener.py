@@ -2780,6 +2780,15 @@ class HiveParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by HiveParser#otherjoinSource.
+    def enterOtherjoinSource(self, ctx:HiveParser.OtherjoinSourceContext):
+        pass
+
+    # Exit a parse tree produced by HiveParser#otherjoinSource.
+    def exitOtherjoinSource(self, ctx:HiveParser.OtherjoinSourceContext):
+        pass
+
+
     # Enter a parse tree produced by HiveParser#joinSourcePart.
     def enterJoinSourcePart(self, ctx:HiveParser.JoinSourcePartContext):
         pass
@@ -2876,15 +2885,6 @@ class HiveParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by HiveParser#tableSource.
     def exitTableSource(self, ctx:HiveParser.TableSourceContext):
-        pass
-
-
-    # Enter a parse tree produced by HiveParser#tableSourceAlias.
-    def enterTableSourceAlias(self, ctx:HiveParser.TableSourceAliasContext):
-        pass
-
-    # Exit a parse tree produced by HiveParser#tableSourceAlias.
-    def exitTableSourceAlias(self, ctx:HiveParser.TableSourceAliasContext):
         pass
 
 
