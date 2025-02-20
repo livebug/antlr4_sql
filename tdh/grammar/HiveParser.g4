@@ -1621,7 +1621,7 @@ tableOrColumn
     : id_
     ;
 tableDotColumn
-    : tableName DOT columnName
+    : (alias = id_ DOT)? columnName
     ;
 
 defaultValue
